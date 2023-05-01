@@ -4,6 +4,41 @@
         "body": "const ${1:name} = ${2:}",
         "description": "This is just a const snippet"
     },
+    "Ternary Expression": {
+        "prefix": "ts?x:tern",
+        "description": "A ternary expression scaffold",
+        "isFileTemplate": false,
+        "body": [
+            " ${1:expression} ? ${2} : ${3:null} ",
+        ],
+    },
+    "Short Hand assignment": {
+        "prefix": "ts?x:sha",
+        "body": "{1:var} {2:|||,&&,??,+,-,*,/|}= {3:value}"
+    },
+    "Immediately Invoked Function Expression ": {
+        "prefix": "ts?x:iife",
+        "description": "This is an immediately invoked function expression",
+        "isFileTemplate": false,
+        "body": [
+            "{(()=> {",
+            "",
+            "${1}",
+            "",
+            "})()}"
+        ],
+    },
+    "Immediately Invoked Generator Expression": {
+        "body": [
+            "{(function* () {",
+            "for(let ${0:item} of ${0:item}s) {",
+            "${1}",
+            "}",
+            "})()}"
+        ],
+        "prefix": "ts?x:iige",
+        "description": "This is an generator expression"
+    },
     "Let Variable": {
         "prefix": "ts?x:let",
         "body": "let ${1:name} = ${2:}",
@@ -39,16 +74,16 @@
         "body": "import { ${2:originalName} as ${3:alias} } from '${1:module}';$0",
         "description": "Imports a specific portion of the module by assigning a local alias in ES6 syntax"
     },
-    "require": {
-        "prefix": "ts?x:rqr",
-        "body": "require('${1:package}');",
-        "description": "Require a package"
-    },
-    "requireToConst": {
-        "prefix": "ts?x:req",
-        "body": "const ${1:packageName} = require('${1:package}');$0",
-        "description": "Require a package to const"
-    },
+    // "require": {
+    //     "prefix": "ts?x:rqr",
+    //     "body": "require('${1:package}');",
+    //     "description": "Require a package"
+    // },
+    // "requireToConst": {
+    //     "prefix": "ts?x:req",
+    //     "body": "const ${1:packageName} = require('${1:package}');$0",
+    //     "description": "Require a package to const"
+    // },
     "moduleExports": {
         "prefix": "ts?x:mde",
         "body": "module.exports = {\n\t$0\n};\n",
@@ -238,27 +273,5 @@
         "prefix": "ts?x:cte",
         "body": "console.timeEnd(${1:object});",
         "description": "Sets end point for execution time measurement"
-    },
-    "Functional Component": {
-        "prefix": "ts?x:fcmp",
-        "body": "function ${1:name}() {\n\n\nreturn <${2:tag}>${3:expr}</div>\n\n}",
-        "description": "Creates a functional component",
-    },
-    "Export Default Function Component": {
-        "prefix": "ts?x:efcmp",
-        "body": "export default function ${3:${TM_FILENAME_BASE}}(${4:params}) {\n\n\n\t<${2:tag}>${1}</div>\n\n}",
-        "description": "Export default functional component ",
-        "isFileTemplate": true,
-    },
-    "Class Component": {
-        "prefix": "ts?x:ccmp",
-        "body": "class ${0:name}{\n\n\n\nrender(){\n\n\n\t<${2:tag}>${3:expr}</div>\n\n}\n\n\n}",
-        "description": "Creates a class component",
-    },
-    "Export Default Class Component": {
-        "prefix": "ts?x:eccmp",
-        "body": "export default class ${0:${TM_FILENAME_BASE}} {\n\n\n\nrender(){\n\n\n\t<${2:tag}>\n${3:expr}\n</div>\n\n}\n\n\n}",
-        "description": "Creates an export default class component",
-        "isFileTemplate": true,
-    },
+    }
 }
