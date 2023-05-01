@@ -1,0 +1,33 @@
+{
+  "name": "ts-x-snippets",
+  "displayName": "TS?X Snippets",
+  "description": "It's a set of modern TS and JS Snippets",
+  "publisher": "SheltonLouis",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/jsx-snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/jsx-snippets.code-snippets"
+      }
+    ]
+  }
+}
