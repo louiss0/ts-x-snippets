@@ -304,5 +304,16 @@
         "prefix": "ts?x:cte",
         "body": "console.timeEnd(${1:object});",
         "description": "Sets end point for execution time measurement"
-    }
+    },
+    "Class Component": {
+        "prefix": "ts?x:cl-cmp",
+        "body": "class ${0:name}{\n\n\n\nrender(){\n\n\n\t<${2:tag}>${3:expr}</div>\n\n}\n\n\n}",
+        "description": "Creates a class component",
+    },
+    "Export Default Class Component": {
+        "prefix": "ts?x:excl-cmp",
+        "body": "export default class ${0:${TM_FILENAME_BASE}} {\n\n\n\nrender(){\n\n\n\t<${2:tag}>\n${3:expr}\n</div>\n\n}\n\n\n}",
+        "description": "Creates an export default class component",
+        "isFileTemplate": true,
+    },
 }

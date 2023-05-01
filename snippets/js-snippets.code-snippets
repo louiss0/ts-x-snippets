@@ -79,16 +79,16 @@
         "body": "import { ${2:originalName} as ${3:alias} } from '${1:module}';$0",
         "description": "Imports a specific portion of the module by assigning a local alias in ES6 syntax"
     },
-    // "require": {
+    //"require": {
     //     "prefix": "ts?x:rqr",
-    //     "body": "require('${1:package}');",
-    //     "description": "Require a package"
+    //   "body": "require('${1:package}');",
+    //  "description": "Require a package"
     // },
-    // "requireToConst": {
-    //     "prefix": "ts?x:req",
-    //     "body": "const ${1:packageName} = require('${1:package}');$0",
-    //     "description": "Require a package to const"
-    // },
+    //"requireToConst": {
+    // "prefix": "ts?x:req",
+    //  "body": "const ${1:packageName} = require('${1:package}');$0",
+    //   "description": "Require a package to const"
+    //},
     "moduleExports": {
         "prefix": "ts?x:mde",
         "body": "module.exports = {\n\t$0\n};\n",
