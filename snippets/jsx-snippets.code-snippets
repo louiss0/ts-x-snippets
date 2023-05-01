@@ -1,6 +1,6 @@
 {
     "Constant Variable": {
-        "prefix": "ts?x:const",
+        "prefix": "ts?x:cstst",
         "body": "const ${1:name} = ${2:}",
         "description": "This is just a const snippet"
     },
@@ -55,32 +55,32 @@
         "description": "Module exports from Common JS, node syntax at ES6"
     },
     "exportNamedVariable": {
-        "prefix": "ts?x:env",
+        "prefix": "ts?x:exnv",
         "body": "export const ${1:exportVariable} = ${2:localVariable};\n",
         "description": "Export named variable in ES6 syntax"
     },
     "exportNamedFunction": {
-        "prefix": "ts?x:enf",
+        "prefix": "ts?x:exnf",
         "body": "export const ${1:functionName} = (${2:params}) => {\n\t$0\n};\n",
         "description": "Export named function in ES6 syntax"
     },
     "exportDefaultFunction": {
-        "prefix": "ts?x:edf",
+        "prefix": "ts?x:exdf",
         "body": "export default function ${1:${TM_FILENAME_BASE}}(${2:params}) {\n\t$0\n};\n",
         "description": "Export default function in ES6 syntax"
     },
     "exportClass": {
-        "prefix": "ts?x:ecl",
+        "prefix": "ts?x:excl",
         "body": "export default class ${1:className} {\n\t$0\n};\n",
         "description": "Export default class in ES6 syntax"
     },
     "exportClassExtends": {
-        "prefix": "ts?x:ece",
+        "prefix": "ts?x:exce",
         "body": "export default class ${1:className} extends ${2:baseclassName} {\n\t$0\n};\n",
         "description": "Export default class which extends a base one in ES6 syntax"
     },
     "constructor": {
-        "prefix": "ts?x:con",
+        "prefix": "ts?x:cst",
         "body": "constructor(${1:params}) {\n\t${0}\n}",
         "description": "Add default constructor in a class in ES6 syntax"
     },
@@ -99,7 +99,7 @@
         "body": "get ${1:propertyName}() {\n\treturn this.${0};\n}",
         "description": "Creates a getter property inside a class in ES6 syntax"
     },
-    "propertyset": {
+    "propertySet": {
         "prefix": "ts?x:pse",
         "body": "set ${1:propertyName}(${2:value}) {\n\t${0};\n}",
         "description": "Creates a setter property inside a class in ES6 syntax"
@@ -120,12 +120,12 @@
         "description": "Creates an anonymous function in ES6 syntax"
     },
     "Async anonymousFunction": {
-        "prefix": "ts?x:async-anfn",
+        "prefix": "ts?x:as-anfn",
         "body": "(${1:params}) => {\n\t${2}\n}",
         "description": "Creates an anonymous function in ES6 syntax"
     },
     "Async namedFunction": {
-        "prefix": "ts?x:async-nfn",
+        "prefix": "ts?x:as-nfn",
         "body": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
         "description": "Creates a named function in ES6 syntax"
     },
@@ -245,7 +245,7 @@
         "description": "Creates a functional component",
     },
     "Export Default Function Component": {
-        "prefix": "ts?x:efcmp",
+        "prefix": "ts?x:exfcmp",
         "body": "export default function ${3:${TM_FILENAME_BASE}}(${4:params}) {\n\n\n\t<${2:tag}>${1}</div>\n\n}",
         "description": "Export default functional component ",
         "isFileTemplate": true,
@@ -256,7 +256,7 @@
         "description": "Creates a class component",
     },
     "Export Default Class Component": {
-        "prefix": "ts?x:eccmp",
+        "prefix": "ts?x:exccmp",
         "body": "export default class ${0:${TM_FILENAME_BASE}} {\n\n\n\nrender(){\n\n\n\t<${2:tag}>\n${3:expr}\n</div>\n\n}\n\n\n}",
         "description": "Creates an export default class component",
         "isFileTemplate": true,

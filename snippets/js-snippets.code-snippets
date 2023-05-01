@@ -1,6 +1,6 @@
 {
     "Constant Variable": {
-        "prefix": "ts?x:const",
+        "prefix": "ts?x:cstst",
         "body": "const ${1:name} = ${2:}",
         "description": "This is just a const snippet"
     },
@@ -12,29 +12,29 @@
             " ${1:expression} ? ${2} : ${3:null} ",
         ],
     },
-    "Short Hand assignment": {
+    "Short Hand Assignment": {
         "prefix": "ts?x:sha",
-        "body": "{1:var} {2:|||,&&,??,+,-,*,/|}= {3:value}"
+        "body": "${1} ${2:|&&,||,??,+,-,*,/|}= ${3:}"
     },
     "Immediately Invoked Function Expression ": {
         "prefix": "ts?x:iife",
         "description": "This is an immediately invoked function expression",
         "isFileTemplate": false,
         "body": [
-            "{(()=> {",
+            "(()=> {",
             "",
             "${1}",
             "",
-            "})()}"
+            "})()"
         ],
     },
     "Immediately Invoked Generator Expression": {
         "body": [
-            "{(function* () {",
+            "(function* () {",
             "for(let ${0:item} of ${0:item}s) {",
             "${1}",
             "}",
-            "})()}"
+            "})()"
         ],
         "prefix": "ts?x:iige",
         "description": "This is an generator expression"
@@ -44,9 +44,14 @@
         "body": "let ${1:name} = ${2:}",
         "description": "THis is just a let snippet"
     },
-    "Awaited Variable": {
-        "prefix": "ts?x:await-con",
-        "body": "const ${1:name} = await ${2:}",
+    "Awaited Constant": {
+        "prefix": "ts?x:aw-con",
+        "body": "const ${1:name} = await ${2:funcName}()",
+        "description": "This is an await snippet that stores the res in a const"
+    },
+    "Awaited Assignment": {
+        "prefix": "ts?x:aw-asm",
+        "body": "${1:name} = await ${2:funcName}()",
         "description": "This is an await snippet that stores the res in a const"
     },
     "import": {
@@ -90,32 +95,32 @@
         "description": "Module exports from Common JS, node syntax at ES6"
     },
     "exportNamedVariable": {
-        "prefix": "ts?x:env",
+        "prefix": "ts?x:exnv",
         "body": "export const ${1:exportVariable} = ${2:localVariable};\n",
         "description": "Export named variable in ES6 syntax"
     },
     "exportNamedFunction": {
-        "prefix": "ts?x:enf",
+        "prefix": "ts?x:exnf",
         "body": "export const ${1:functionName} = (${2:params}) => {\n\t$0\n};\n",
         "description": "Export named function in ES6 syntax"
     },
     "exportDefaultFunction": {
-        "prefix": "ts?x:edf",
+        "prefix": "ts?x:exdf",
         "body": "export default function ${1:${TM_FILENAME_BASE}}(${2:params}) {\n\t$0\n};\n",
         "description": "Export default function in ES6 syntax"
     },
     "exportClass": {
-        "prefix": "ts?x:ecl",
+        "prefix": "ts?x:excl",
         "body": "export default class ${1:className} {\n\t$0\n};\n",
         "description": "Export default class in ES6 syntax"
     },
     "exportClassExtends": {
-        "prefix": "ts?x:ece",
+        "prefix": "ts?x:exce",
         "body": "export default class ${1:className} extends ${2:baseclassName} {\n\t$0\n};\n",
         "description": "Export default class which extends a base one in ES6 syntax"
     },
     "constructor": {
-        "prefix": "ts?x:con",
+        "prefix": "ts?x:cst",
         "body": "constructor(${1:params}) {\n\t${0}\n}",
         "description": "Add default constructor in a class in ES6 syntax"
     },
@@ -125,8 +130,8 @@
         "description": "Creates a method inside a class in ES6 syntax"
     },
     "async method": {
-        "prefix": "ts?x:a-met",
-        "body": "${1:methodName}(${2:params}) {\n\t${0}\n}",
+        "prefix": "ts?x:as-met",
+        "body": "async ${1:methodName}(${2:params}) {\n\t${0}\n}",
         "description": "Creates a method inside a class in ES6 syntax"
     },
     "propertyGet": {
@@ -134,7 +139,7 @@
         "body": "get ${1:propertyName}() {\n\treturn this.${0};\n}",
         "description": "Creates a getter property inside a class in ES6 syntax"
     },
-    "propertyset": {
+    "propertySet": {
         "prefix": "ts?x:pse",
         "body": "set ${1:propertyName}(${2:value}) {\n\t${0};\n}",
         "description": "Creates a setter property inside a class in ES6 syntax"
@@ -155,12 +160,12 @@
         "description": "Creates an anonymous function in ES6 syntax"
     },
     "Async anonymousFunction": {
-        "prefix": "ts?x:async-anfn",
+        "prefix": "ts?x:as-anfn",
         "body": "(${1:params}) => {\n\t${2}\n}",
         "description": "Creates an anonymous function in ES6 syntax"
     },
     "Async namedFunction": {
-        "prefix": "ts?x:async-nfn",
+        "prefix": "ts?x:as-nfn",
         "body": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
         "description": "Creates a named function in ES6 syntax"
     },

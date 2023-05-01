@@ -1,57 +1,60 @@
-# ts-x-snippets README
+# TS-X-snippets README
 
-This is the README for your extension "ts-x-snippets". After writing up a brief description, we recommend including the following sections.
+The creation of TS?X Snippets is to allow developers to write simple snippets for code that is written on a day-by-day basis.
+The snippets are created to be practical, generic and inclusive to java and typescript developers. You can use classes class Components and even use functions and functional Components. 
 
+## Keywords 
 
+Most of the snippets in this repo are created with some important keywords.
+
+> [Tip]: It's best to remember them when in doubt. Remember to type ts first if you are not getting good results.  
+
+- `as` stands for `async` 
+- `aw` stands for `await`
+- `fn` stands for `function` 
+- `c` stands for `console`
+- `n` stands for `named`
+- `af` stands for **arrow** `function`
+- `met` stands for **method**
+- `obj` stands for **object**
+- `im` stands for `import`
+- `ex` stands for `export`
+- `cl` stands for `class`
+- `cmp` stands for **component**
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+<!-- 
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+You should be using typescript or javascript if you are using this extension. I will not support `.mjs` or `.cjs`. Use ESM for the sake of your sanity and mine. 
 
-## Extension Settings
+## Recommendations
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Please use this extension with each of these other Extensions.
 
-For example:
+- Pretty Typescript Errors
+- Total Typescript
+- For Angular Devs Angular Snippets
+- For Vue Devs Vue Snippets
+- For React Devs ES7+ React/Redux/React-Native  Snippets
+- For Astro Devs Astro Snippets
+- For Solid Devs Solid Snippets
+- For Svelte Devs Svelte 3 Snippets
 
-This extension contributes the following settings:
+<!-- ## Known Issues
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Calling out known issues can help limit users opening duplicate issues against your extension. -->
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
-## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
+<!-- ## Working with Markdown
 
 You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
 
@@ -64,4 +67,4 @@ You can author your README using Visual Studio Code. Here are some useful editor
 * [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy!**
+**Enjoy!** -->
