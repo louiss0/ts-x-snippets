@@ -10,6 +10,22 @@
   "categories": [
     "Snippets"
   ],
+  "repository": {
+    "url": "https://github.com/louiss0/ts-x-snippets"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Shelton Louis",
+    "email": "louiss0@gmail.com",
+    "url": "https://github.com/louiss0"
+  },
+  "keywords": [
+    "snippets",
+    "typescript",
+    "javascript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
   "contributes": {
     "snippets": [
       {
