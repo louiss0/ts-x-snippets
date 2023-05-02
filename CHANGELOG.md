@@ -1,9 +1,14 @@
 # Change Log
 
-All notable changes to the "ts-x-snippets" extension will be documented in this file.
+## 1.0.0
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Created and finished TSX Snippets
+- Fixed js ts and ts snippets
+- Finalized the rules for how this extension is used
 
-## [Unreleased]
+
+## 0.0.0
 
 - Initial release
+
+- Created js?x/ts snippets
