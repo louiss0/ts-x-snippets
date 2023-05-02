@@ -1,7 +1,12 @@
-# TS-X-snippets README
+# TS-X-snippets 
 
 The creation of TS?X Snippets is to allow developers to write simple snippets for code that is written on a day-by-day basis.
-The snippets are created to be practical, generic and inclusive to java and typescript developers. You can use classes class Components and even use functions and functional Components. 
+The snippets are created to be practical, generic and inclusive to java and typescript developers. You can use classes class Components and even use functions and functional Components.
+
+![All Snippets](images/all-tsx-snippets.gif)
+
+
+![Component Snippets](images/component-snippets.gif)
 
 ## Keywords 
 
@@ -28,7 +33,7 @@ Most of the snippets in this repo are created with some important keywords.
 
 
 <!-- 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
+> Tip: Many popular extensions utilize animations. This is an exclellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
 
 ## Requirements
 

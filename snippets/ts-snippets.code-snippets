@@ -141,7 +141,7 @@
         "description": "Export default class in ES6 syntax"
     },
     "exportClassExtends": {
-        "prefix": "ts?x:exce",
+        "prefix": "ts?x:excle",
         "body": "export default class ${1:className} extends ${2:baseclassName} {\n\t$0\n};\n",
         "description": "Export default class which extends a base one in ES6 syntax"
     },
@@ -187,7 +187,7 @@
     },
     "Async anonymousFunction": {
         "prefix": "ts?x:as-anfn",
-        "body": "(${1:params}) => {\n\t${2}\n}",
+        "body": "async (${1:params}) => {\n\t${2}\n}",
         "description": "Creates an anonymous function in ES6 syntax"
     },
     "Async namedFunction": {
