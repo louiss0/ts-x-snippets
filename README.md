@@ -29,7 +29,12 @@ Most of the snippets in this repo are created with some important keywords.
 
 ## Features
 
-
+- Has Component Snippets
+- Has Class Snippets
+- Has Function Snippets
+- Has Module Snippets
+- Has Console Log Snippets
+- Has Set Timeout and Interval Snippets
 
 
 <!-- 
