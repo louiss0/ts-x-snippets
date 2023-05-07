@@ -1,6 +1,6 @@
 {
     "Constant Variable": {
-        "prefix": "ts?x:cstst",
+        "prefix": "ts?x:const",
         "body": "const ${1:name} = ${2:}",
         "description": "This is just a const snippet"
     },

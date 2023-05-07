@@ -3,13 +3,16 @@
   "displayName": "TS?X Snippets",
   "description": "It's a set of modern TS and JS Snippets",
   "publisher": "SheltonLouis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.77.0"
   },
   "categories": [
     "Snippets"
   ],
+  "scripts": {
+    "release": "release-it"
+  },
   "repository": {
     "url": "https://github.com/louiss0/ts-x-snippets"
   },
@@ -45,5 +48,22 @@
         "path": "./snippets/tsx-snippets.code-snippets"
       }
     ]
+  },
+  "devDependencies": {
+    "@release-it/keep-a-changelog": "^3.1.0",
+    "release-it": "^15.10.3"
+  },
+  "release-it": {
+    "after:git:release": "echo After git push, before github release",
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+  },
+  "git": {
+    "commitMessage": "chore: release v${version}"
+  },
+  "github": {
+    "release": true
+  },
+  "plugins": {
+    "@release-it/keep-a-changelog": true
   }
 }
