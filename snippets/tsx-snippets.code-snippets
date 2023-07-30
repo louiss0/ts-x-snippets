@@ -114,11 +114,6 @@
     //  "body": "const ${1:packageName} = require('${1:package}');$0",
     //   "description": "Require a package to const"
     //},
-    "moduleExports": {
-        "prefix": "ts?x:mde",
-        "body": "module.exports = {\n\t$0\n};\n",
-        "description": "Module exports from Common JS, node syntax at ES6"
-    },
     "exportNamedVariable": {
         "prefix": "ts?x:exnv",
         "body": "export const ${1:exportVariable} = ${2:localVariable};\n",
@@ -135,12 +130,17 @@
         "description": "Export default function in ES6 syntax"
     },
     "exportClass": {
-        "prefix": "ts?x:excl",
+        "prefix": "ts?x:excls",
+        "body": "export class ${1:className} {\n\t$0\n};\n",
+        "description": "Export default class in ES6 syntax"
+    },
+    "exportDefaultClass": {
+        "prefix": "ts?x:excls",
         "body": "export default class ${1:className} {\n\t$0\n};\n",
         "description": "Export default class in ES6 syntax"
     },
     "exportClassExtends": {
-        "prefix": "ts?x:excle",
+        "prefix": "ts?x:exclse",
         "body": "export default class ${1:className} extends ${2:baseclassName} {\n\t$0\n};\n",
         "description": "Export default class which extends a base one in ES6 syntax"
     },

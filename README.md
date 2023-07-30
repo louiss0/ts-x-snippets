@@ -1,22 +1,21 @@
-# TS-X-snippets 
+# TS-X-snippets
 
 The creation of TS?X Snippets is to allow developers to write simple snippets for code that is written on a day-by-day basis.
 The snippets are created to be practical, generic and inclusive to java and typescript developers. You can use classes class Components and even use functions and functional Components.
 
 ![All Snippets](images/all-tsx-snippets.gif)
 
-
 ![Component Snippets](images/component-snippets.gif)
 
-## Keywords 
+## Keywords
 
 Most of the snippets in this repo are created with some important keywords.
 
 > [Tip]: It's best to remember them when in doubt. Remember to type ts first if you are not getting good results.  
 
-- `as` stands for `async` 
+- `as` stands for `async`
 - `aw` stands for `await`
-- `fn` stands for `function` 
+- `fn` stands for `function`
 - `c` stands for `console`
 - `n` stands for `named`
 - `af` stands for **arrow** `function`
@@ -36,13 +35,12 @@ Most of the snippets in this repo are created with some important keywords.
 - Has Console Log Snippets
 - Has Set Timeout and Interval Snippets
 
-
 <!-- 
-> Tip: Many popular extensions utilize animations. This is an exclellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
 
 ## Requirements
 
-You should be using typescript or javascript if you are using this extension. I will not support `.mjs` or `.cjs`. Use ESM for the sake of your sanity and mine. 
+You should be using typescript or javascript if you are using this extension. I will not support `.mjs` or `.cjs`. Use ESM for the sake of your sanity and mine.
 
 ## Recommendations
 
@@ -60,9 +58,6 @@ Please use this extension with each of these other Extensions.
 <!-- ## Known Issues
 
 Calling out known issues can help limit users opening duplicate issues against your extension. -->
-
-
-
 
 <!-- ## Working with Markdown
 
