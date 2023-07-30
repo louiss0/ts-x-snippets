@@ -3,7 +3,7 @@
   "displayName": "TS?X Snippets",
   "description": "It's a set of modern TS and JS Snippets",
   "publisher": "SheltonLouis",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.77.0"
   },
