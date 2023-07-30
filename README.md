@@ -40,7 +40,8 @@ Most of the snippets in this repo are created with some important keywords.
 
 ## Requirements
 
-You should be using typescript or javascript if you are using this extension. I will not support `.mjs` or `.cjs`. Use ESM for the sake of your sanity and mine.
+You should be using typescript or javascript if you are using this extension. I will not support `.mjs` or `.cjs`.
+Use ESM for the sake of your sanity and mine.
 
 ## Recommendations
 
