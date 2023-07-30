@@ -321,7 +321,7 @@
         "description": "Creates a class component",
     },
     "Export Default Class Component": {
-        "prefix": "ts?x:excl-cmp",
+        "prefix": "ts?x:ex-cl-cmp",
         "body": "export default class ${0:${TM_FILENAME_BASE}} {\n\n\n\nrender(){\n\n\n\t<${2:tag}>\n${3:expr}\n</div>\n\n}\n\n\n}",
         "description": "Creates an export default class component",
         "isFileTemplate": true,
