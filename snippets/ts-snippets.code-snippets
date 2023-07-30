@@ -131,17 +131,17 @@
         "description": "Export default function in ES6 syntax"
     },
     "exportClass": {
-        "prefix": "ts?x:excls",
+        "prefix": "ts?x:ex-cl",
         "body": "export class ${1:className} {\n\t$0\n};\n",
         "description": "Export default class in ES6 syntax"
     },
     "exportDefaultClass": {
-        "prefix": "ts?x:excls",
+        "prefix": "ts?x:ex-cl",
         "body": "export default class ${1:className} {\n\t$0\n};\n",
         "description": "Export default class in ES6 syntax"
     },
     "exportClassExtends": {
-        "prefix": "ts?x:exclse",
+        "prefix": "ts?x:ex-cl-et",
         "body": "export default class ${1:className} extends ${2:baseclassName} {\n\t$0\n};\n",
         "description": "Export default class which extends a base one in ES6 syntax"
     },
